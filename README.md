@@ -1,8 +1,8 @@
-# Factorium
+# Adeptus Factorium
 
-Factorium is a game-modification suite built around reusable AI skills. Its purpose is to let an agent inspect a real game project, learn how that specific project works, and then perform focused modification or quality passes without forcing the game into a rigid universal template.
+Adeptus Factorium is a game-modification suite built around reusable AI skills. Its purpose is to let an agent inspect a real game project, learn how that specific project works, and then perform focused modification or quality passes without forcing the game into a rigid universal template.
 
-Factorium currently defines two reusable modules: **Dialogue Factory** and **Art Factory**.
+Adeptus Factorium currently defines two reusable modules: **Dialogue Factory** and **Art Factory**.
 
 ## V0.1: Dialogue Factory
 
@@ -20,8 +20,8 @@ Target game repository
 Dialogue Investigator
         |
         v
-.factorium/dialogue/DIALOGUE_ENVELOPE.md
-.factorium/dialogue/DIALOGUE_INVENTORY.md
+.adeptus_factorium/dialogue/DIALOGUE_ENVELOPE.md
+.adeptus_factorium/dialogue/DIALOGUE_INVENTORY.md
         |
         v
 Dialogue Factory + DIALOGUE_DIRECTION.md
@@ -34,7 +34,7 @@ Dialogue Factory + DIALOGUE_DIRECTION.md
 
 ## Design principles
 
-- **Discover before modifying.** Factorium should learn the target game's actual rules rather than begin with a generic checklist and assume it is complete.
+- **Discover before modifying.** Adeptus Factorium should learn the target game's actual rules rather than begin with a generic checklist and assume it is complete.
 - **Use the game as evidence.** Character cards, implementation, existing dialogue, event logic, and procedural systems are stronger evidence than assumptions about how a game "should" work.
 - **Preserve authored work.** Good existing dialogue should remain untouched. A routing problem should not become a rewrite problem.
 - **Judge the reachable context.** The important question is not merely whether a line is well written, but whether the speaker would plausibly say it in every materially different context that can legitimately reach it.
@@ -48,7 +48,8 @@ Dialogue Factory + DIALOGUE_DIRECTION.md
 ## Repository structure
 
 ```text
-factorium/
+adeptus_factorium/
+├── LICENSE
 ├── README.md
 ├── docs/
 │   └── WORK_ART_FACTORY_HANDOFF.md
@@ -64,23 +65,23 @@ factorium/
         └── ART_DIRECTION_TEMPLATE.md
 ```
 
-The target game, not the Factorium skills repository, holds optional working artifacts under `.factorium/dialogue/`: `DIALOGUE_ENVELOPE.md` (discovered logic), `DIALOGUE_INVENTORY.md` (source map and coverage), `DIALOGUE_DIRECTION.md` (user-controlled artistic goals), and `FACTORY_AUDIT.md` (changes and unresolved cases). Build these progressively; a full per-line index is not a prerequisite.
+The target game, not the Adeptus Factorium skills repository, holds optional working artifacts under `.adeptus_factorium/dialogue/`: `DIALOGUE_ENVELOPE.md` (discovered logic), `DIALOGUE_INVENTORY.md` (source map and coverage), `DIALOGUE_DIRECTION.md` (user-controlled artistic goals), and `FACTORY_AUDIT.md` (changes and unresolved cases). Build these progressively; a full per-line index is not a prerequisite.
 
 V0.1 established the dialogue workflow. The art module below is a separate skill system and should be tested in the actual Work execution environment before claiming full production readiness.
 
 ## V0.2: Art Factory (skill definitions; Work validation pending)
 
-Art Factory extends Factorium to existing game art. It uses two skills:
+Art Factory extends Adeptus Factorium to existing game art. It uses two skills:
 
 1. **Art Investigator** — discover active artwork, visual conventions, authoritative references, engine/import requirements, asset dependencies, and actually available generation tools; write a compact Art Envelope and source Inventory.
 2. **Art Factory** — audit assets against a developer-approved art direction, refine/remake/create artwork through real image tooling, preserve originals, integrate only necessary asset/config/code changes, and verify visual and technical results.
 
 The target game's working files are:
 
-- .factorium/art/ART_ENVELOPE.md — discovered evidence, constraints, and unknowns.
-- .factorium/art/ART_INVENTORY.md — source map, dependencies, revisions, and review coverage.
-- .factorium/art/ART_DIRECTION.md — the **developer's** approved artistic objectives, references, scope, preservation rules, and decisions.
-- .factorium/art/ART_AUDIT.md — actual changes, generation attempts, adversarial reviews, validations, and unresolved issues.
+- .adeptus_factorium/art/ART_ENVELOPE.md — discovered evidence, constraints, and unknowns.
+- .adeptus_factorium/art/ART_INVENTORY.md — source map, dependencies, revisions, and review coverage.
+- .adeptus_factorium/art/ART_DIRECTION.md — the **developer's** approved artistic objectives, references, scope, preservation rules, and decisions.
+- .adeptus_factorium/art/ART_AUDIT.md — actual changes, generation attempts, adversarial reviews, validations, and unresolved issues.
 
 A starter for the direction is at skills/art-factory/ART_DIRECTION_TEMPLATE.md. The user controls creative direction; the system can recommend an overhaul but cannot authorize one.
 

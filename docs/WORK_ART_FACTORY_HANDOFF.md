@@ -4,7 +4,7 @@ Use this when testing the Art Investigator and Art Factory skills in the ChatGPT
 
 ## Starting point
 
-Repository: denni1cd/factorium
+Repository: denni1cd/adeptus_factorium
 
 Read:
 - skills/art-investigator/SKILL.md
@@ -13,11 +13,11 @@ Read:
 
 These are skill instructions, not evidence that Work can actually generate images, spawn two independent subagents, reach local ComfyUI, or edit a target game's files. Verify all claimed capabilities in this **actual** session.
 
-Choose a target game that the user has authorized for this test, and confirm the authorized art scope. Keep Factorium's reusable skill definitions in Factorium; write project-specific .factorium/art/ working files into the target game only.
+Choose a target game that the user has authorized for this test, and confirm the authorized art scope. Keep Adeptus Factorium's reusable skill definitions in Adeptus Factorium; write project-specific .adeptus_factorium/art/ working files into the target game only.
 
 ## Suggested Work task
 
-> Implement a real V1 acceptance test of Factorium's Art Investigator and Art Factory skills on the authorized target game. Use its actual artwork, code references, and engine constraints. First produce the Art Envelope and Inventory; consult the developer for any needed Art Direction. Develop one feasible, narrowly scoped art improvement recommendation with a real representative example generated or edited using tools actually available to this Work session. Spawn at least two genuine independent adversarial reviewer subagents: one challenges technical execution/integration, the other challenges artistic repeatability at production scale. Each must explicitly answer "Is this realistic?" based on evidence and independently report objections. If Work cannot spawn independent subagents, cannot render a sample, or cannot reach a proposed backend, report that blocker rather than simulating a pass. Seek approval for the substantive change, then implement a limited and reversible asset update, inspect the actual result, complete available integration checks, and report the correct visual/gameplay completion status. Record revisions, dependencies, attempts, failures, and audited changes. Do not rewrite the entire game's art for this initial test.
+> Implement a real V1 acceptance test of Adeptus Factorium's Art Investigator and Art Factory skills on the authorized target game. Use its actual artwork, code references, and engine constraints. First produce the Art Envelope and Inventory; consult the developer for any needed Art Direction. Develop one feasible, narrowly scoped art improvement recommendation with a real representative example generated or edited using tools actually available to this Work session. Spawn at least two genuine independent adversarial reviewer subagents: one challenges technical execution/integration, the other challenges artistic repeatability at production scale. Each must explicitly answer "Is this realistic?" based on evidence and independently report objections. If Work cannot spawn independent subagents, cannot render a sample, or cannot reach a proposed backend, report that blocker rather than simulating a pass. Seek approval for the substantive change, then implement a limited and reversible asset update, inspect the actual result, complete available integration checks, and report the correct visual/gameplay completion status. Record revisions, dependencies, attempts, failures, and audited changes. Do not rewrite the entire game's art for this initial test.
 
 ## Acceptance checks
 
@@ -38,4 +38,4 @@ For each acceptance check, report PASS / FAIL / BLOCKED, the evidence path or sp
 
 ## Delivery
 
-Keep reusable changes in a reviewable branch/PR against Factorium. Make target-game asset changes only in that game's authorized workspace. Return a brief summary: generated sample location, adversarial verdicts, integrated changes, validation status, failures, and recommended changes to the reusable skill definitions.
+Keep reusable changes in a reviewable branch/PR against Adeptus Factorium. Make target-game asset changes only in that game's authorized workspace. Return a brief summary: generated sample location, adversarial verdicts, integrated changes, validation status, failures, and recommended changes to the reusable skill definitions.

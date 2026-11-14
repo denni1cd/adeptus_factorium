@@ -15,10 +15,10 @@ Do not treat a pretty standalone illustration as a finished game asset. Do not m
 
 Read in the **target game**, where they live:
 
-- .factorium/art/ART_ENVELOPE.md — evidence-backed findings from Art Investigator, including engine requirements, art pipeline, conventions, dependencies, and tool availability.
-- .factorium/art/ART_INVENTORY.md — source map, dependencies, revisions, previously completed checks, and coverage.
-- .factorium/art/ART_DIRECTION.md — developer-owned artistic goals, scope, examples, constraints, exceptions, preservation rules, and decision rights.
-- .factorium/art/ART_AUDIT.md — changes, decisions, test evidence, failures, and pending work.
+- .adeptus_factorium/art/ART_ENVELOPE.md — evidence-backed findings from Art Investigator, including engine requirements, art pipeline, conventions, dependencies, and tool availability.
+- .adeptus_factorium/art/ART_INVENTORY.md — source map, dependencies, revisions, previously completed checks, and coverage.
+- .adeptus_factorium/art/ART_DIRECTION.md — developer-owned artistic goals, scope, examples, constraints, exceptions, preservation rules, and decision rights.
+- .adeptus_factorium/art/ART_AUDIT.md — changes, decisions, test evidence, failures, and pending work.
 
 Run or request Art Investigator when the envelope is missing, invalidated, or materially insufficient. Inspect current game sources for decisions; the envelope is a map, not a replacement for evidence. If ART_DIRECTION.md is absent or ambiguous in a decision-critical way, consult the user. You may propose a starter direction but must label it unapproved. Never infer an approved demand for realism or more detail from genre or existing assets.
 

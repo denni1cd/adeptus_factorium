@@ -7,10 +7,10 @@ description: Audit and conservatively repair game dialogue using a discovered Di
 
 ## Purpose and prerequisite
 
-Dialogue Factory is the high-volume dialogue QA and repair stage of Factorium. Its primary input is the target game's:
+Dialogue Factory is the high-volume dialogue QA and repair stage of Adeptus Factorium. Its primary input is the target game's:
 
 ```text
-.factorium/dialogue/DIALOGUE_ENVELOPE.md
+.adeptus_factorium/dialogue/DIALOGUE_ENVELOPE.md
 ```
 
 Use the envelope together with the actual game repository. The envelope explains what to look for; the repository provides evidence about the specific line, its speaker, scene, implementation, and reachable states.
@@ -19,7 +19,7 @@ Do not begin a broad pass without a usable, current envelope. If it is missing, 
 
 ## Reusable context, direction, and incremental passes
 
-In addition to the envelope, read these files in the target game's `.factorium/dialogue/` folder when present:
+In addition to the envelope, read these files in the target game's `.adeptus_factorium/dialogue/` folder when present:
 
 - `DIALOGUE_INVENTORY.md`: locations, speakers, triggers, generators, source evidence, and indexed coverage. Use it as a **map** for focused source reads, not as proof that every reachable state has been checked. If absent, seed a small navigational inventory as batches are inspected; do not stop the entire Factory to inventory every line.
 - `DIALOGUE_DIRECTION.md`: current **user-selected artistic direction**, scope, and exceptions. This is separate from project facts. If missing or unspecified, do not impose strict realism, cinematic dialogue, or an imagined house style; follow known game conventions and surface decisions that genuinely depend on author preference.
@@ -128,7 +128,7 @@ Keep review overhead proportional to risk: inspect enough context to support eac
 
 ## Audit trail
 
-The changed game content is the primary output. For meaningful modifications, maintain a concise audit note in the project's existing work log or, if none is in use, `.factorium/dialogue/FACTORY_AUDIT.md`. Record only what is needed to understand:
+The changed game content is the primary output. For meaningful modifications, maintain a concise audit note in the project's existing work log or, if none is in use, `.adeptus_factorium/dialogue/FACTORY_AUDIT.md`. Record only what is needed to understand:
 
 - location or stable dialogue/node identifier;
 - outcome: ROUTE, VARIANT, or REWRITE;

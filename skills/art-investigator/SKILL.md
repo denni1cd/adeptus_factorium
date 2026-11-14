@@ -11,12 +11,12 @@ Investigate the actual target game before Art Factory makes broad art changes. D
 
 Treat the game as evidence. Do not assume a genre, art style, engine, sprite format, character model, rendering pipeline, or available generation tool. Concentrate on the user-selected scope and expand only when cross-cutting references matter.
 
-## Working files (in the target game, not in Factorium)
+## Working files (in the target game, not in Adeptus Factorium)
 
-- .factorium/art/ART_ENVELOPE.md — compact, sourced map of the project's art systems, visual conventions, production constraints, and uncertainties.
-- .factorium/art/ART_INVENTORY.md — navigational asset index, dependencies, source references, revisions, and coverage; never an unnecessary complete duplicate of every image.
-- .factorium/art/ART_DIRECTION.md — user-controlled desired visual destination, scope, references, preservation rules, and approvals. Read if present, but do not fabricate or approve it.
-- .factorium/art/ART_AUDIT.md — maintained primarily by Art Factory; read when earlier changes affect discovery.
+- .adeptus_factorium/art/ART_ENVELOPE.md — compact, sourced map of the project's art systems, visual conventions, production constraints, and uncertainties.
+- .adeptus_factorium/art/ART_INVENTORY.md — navigational asset index, dependencies, source references, revisions, and coverage; never an unnecessary complete duplicate of every image.
+- .adeptus_factorium/art/ART_DIRECTION.md — user-controlled desired visual destination, scope, references, preservation rules, and approvals. Read if present, but do not fabricate or approve it.
+- .adeptus_factorium/art/ART_AUDIT.md — maintained primarily by Art Factory; read when earlier changes affect discovery.
 
 If ART_DIRECTION.md is absent, offer the provided starter template for user approval. Clearly distinguish inferred visual observations from desired creative direction. Do not silently elevate existing artwork, recent model output, or genre conventions into an approved direction.
 

@@ -1,6 +1,6 @@
 # ART_DIRECTION.md — developer-owned starter template
 
-This file belongs in the target game at .factorium/art/ART_DIRECTION.md. Copy and adapt it; do not treat the example prompts as approved instructions. The developer owns this file. Art Investigator discovers what exists; Art Factory works toward the destination **the developer approves**.
+This file belongs in the target game at .adeptus_factorium/art/ART_DIRECTION.md. Copy and adapt it; do not treat the example prompts as approved instructions. The developer owns this file. Art Investigator discovers what exists; Art Factory works toward the destination **the developer approves**.
 
 ## Project and scope
 
